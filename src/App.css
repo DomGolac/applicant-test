@@ -2,15 +2,17 @@
   text-align: center;
 }
 
+.App-link {
+  color: #61dafb;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.blue {
+  color: #20a1d4;
 }
 
 .Container {
@@ -21,15 +23,51 @@
   justify-content: center;
 }
 
-.Container .still-needed {
+.donation-bar {
+  background-color: #ef5f3c;
+  border: 2px solid #eaeaea;
+  height: 10px;
+  width: 321px;
+}
+
+.donation-body {
+  border: 2px solid #eaeaea;
+  color: #777;
+  height: 225px;
+  text-align: left;
+  width: 321px;
+}
+
+.donation-body p {
+  padding: 0 25px;
+}
+
+.donation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  width: 325px;
+}
+
+.donation-buttons button {
+  background-color: #fff;
+  border: 2px solid #eaeaea;
+  border-radius: 3px;
+  color: #777;
+  height: 40px;
+  width: 150px;
+}
+
+.donation-header {
   background-color: #424242;
   border-radius: 3px;
   color: #fff;
   height: 50px;
+  margin-bottom: 10px;
   width: 325px;
 }
 
-.Container .still-needed::after {
+.donation-header::after {
   content:'';
   position: absolute;
   left: 225px;
@@ -43,8 +81,37 @@
   border-right: 5px solid transparent;
 }
 
-.App-link {
-  color: #61dafb;
+.donation-input {
+  border: 2px solid #eaeaea;
+  border-radius: 3px;
+  font-size: 20px;
+  font-weight: bold;
+  height: 46px;
+  padding: 0;
+  padding-left: 30px;
+  width: 91px;
+}
+
+.donation-inputs {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+}
+
+.donation-submit {
+  background-color: #1cbc2c;
+  border: 2px solid #1cbc2c;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  height: 50px;
+  width: 125px;
+}
+
+.orange {
+  color: #ef5f3c;
 }
 
 @keyframes App-logo-spin {
@@ -53,5 +120,11 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
   }
 }
