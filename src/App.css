@@ -24,9 +24,9 @@
 }
 
 .donation-bar {
-  background-color: #ef5f3c;
   border: 2px solid #eaeaea;
   height: 10px;
+  position: relative;
   width: 321px;
 }
 
@@ -88,8 +88,8 @@
   font-weight: bold;
   height: 46px;
   padding: 0;
-  padding-left: 30px;
-  width: 91px;
+  padding-left: 25px;
+  width: 96px;
 }
 
 .donation-inputs {
